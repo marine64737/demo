@@ -1,10 +1,10 @@
 package com.example.demo;
 
+import com.example.demo.DTO.Article_test;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class hello {
@@ -19,7 +19,7 @@ public class hello {
         return "input";
     }
     @PostMapping("/output")
-    String output(Article article){
+    String output(Article_test article){
         System.out.print("title: "+article.getTitle()+", content: "+article.getContent());
         return "output";
     }
