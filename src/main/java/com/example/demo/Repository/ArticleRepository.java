@@ -1,7 +1,11 @@
 package com.example.demo.Repository;
 
-import com.example.demo.DTO.Article_test;
+import com.example.demo.Entity.Article;
 import org.springframework.data.repository.CrudRepository;
 
-public interface ArticleRepository extends CrudRepository<Article_test, Long> {
+import java.util.List;
+
+public interface ArticleRepository extends CrudRepository<Article, Long> {
+    @Override
+    List<Article> findAll();
 }

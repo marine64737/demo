@@ -4,9 +4,7 @@ public class Article_test {
     private String title;
     private String content;
 
-    Article_test(){}
-
-    public Article_test(String title, String content){
+    Article_test(String title, String content){
         this.title=title;
         this.content=content;
     }
@@ -16,11 +14,5 @@ public class Article_test {
     }
     public String getContent(){
         return content;
-    }
-    public void setTitle(String title){
-        this.title=title;
-    }
-    public void setContent(String content){
-        this.content=content;
     }
 }
