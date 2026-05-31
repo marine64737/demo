@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome!</title>
+</head>
+<div class="container">
+    <form>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">번호</th>
+                <th scope="col">제목</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#articles}}
+                <tr>
+                    <th scope="row">{{id}}</th>
+                    <td><a href="/view/{{id}}">{{title}}</a></td>
+                </tr>
+            {{/articles}}
+            </tbody>
+        </table>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a class="btn btn-primary" href="/new" role="button">글쓰기</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome!</title>
+</head>
+<body>
+<h1>글 작성</h1><form action="/save" method="post">
+    <div class="mb-3">
+        <label class="form-label">제목</label>
+        <input type="text" class="form-control" name="title" placeholder="제목을 입력하세요">
+    </div>
+    <br>
+    <div class="mb-3">
+        <label class="form-label">내용</label>
+        <textarea class="form-control" name="content" placeholder="내용을 입력하세요" rows="3"></textarea>
+    </div>
+    <br>
+    <button type="submit">저장</button>
+    <a href="/"><button type="button">뒤로 가기</button></a>
+</form>
+</body>
+</html>

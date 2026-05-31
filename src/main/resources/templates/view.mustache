@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome!</title>
+</head>
+<body>
+<h2 name="title">{{article.title}}</h2>
+<input type="hidden" name="id" value="{{article.id}}">
+<br>
+<div class="mb-3">
+<label class="form-label" name="content">{{article.content}}</label>
+</div>
+<br>
+<a href="/modify/{{article.id}}"><button type="button">수정</button></a>
+<a href="/delete/{{article.id}}"><button type="button">삭제</button></a>
+<a href="/"><button type="button">돌아가기</button></a>
+</body>
+</html>
